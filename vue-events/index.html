@@ -10,12 +10,14 @@
         </header>
         <section id="events">
             <h2>Events in Action</h2>
-            <button v-on:click="add()">Add</button>
+            <button @click="add()">Add</button>
             <button v-on:click="substract()">Remove</button>
             <p v-once>Starting counter: {{counter}}</p>
             <p>Result: {{counter}}</p>
             <input type="text" v-on:input="setName($event)" v-bind:value="name" />
-            <p>Your name: {{ name }}</p>
+            <input type="text" v-model="name" />
+            <button v-on:click="resetInput">Reset Input</button>
+            <p>Your name: {{ fullname }}</p>
             <form v-on:submit.prevent="submitForm">
                 <input type="text" />
                 <button>Sign Up</button>

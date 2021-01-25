@@ -1,0 +1,27 @@
+.red {
+    color: red;
+}
+.blue {
+    color: blue;
+}
+.purple {
+    color: purple;
+}
+.visible {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+.inline {
+    color: white;
+}
+.inlinered {
+    background-color: red;
+}
+.inlineblue {
+    background-color: blue;
+}
+.inlineblack {
+    background-color: black;
+}

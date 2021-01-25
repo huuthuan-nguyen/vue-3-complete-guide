@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vue Dynamic Styling</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Vue Dynamic Styling</h1>
+        </header>
+        <section id="styling">
+            <div class="demo" v-bind:class="boxAClasses" v-on:click="boxSelected('A')"></div>
+            <div v-bind:class="['demo', {active: boxBSelected}]" v-on:click="boxSelected('B')"></div>
+            <div class="demo" v-bind:class="{active: boxCSelected}" v-on:click="boxSelected('C')"></div>
+        </section>
+    </body>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
+</html>
